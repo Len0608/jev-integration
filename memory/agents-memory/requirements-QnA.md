@@ -76,7 +76,7 @@ Four questions are raised. All reflect genuine conflicts or gaps between the req
 - **Rationale**: Validation errors are categorically different from runtime errors: they indicate that the task was configured incorrectly and no amount of retrying will fix them. Separating them at the exit code level makes this distinction actionable in the workflow without string-parsing the status description.
 - **Trade-offs**: Option A (keep `1` for all) is simpler — one error branch in the workflow. Option B adds a second branch but gives workflows the information they need to respond appropriately. The validation/runtime split is idiomatic in UAC extension design.
 - **Requirement Impact**: The error table in section 4.2 would be updated: all rows under "Input validation errors" and "Question schema errors" would show return code `20` instead of `1`. Runtime rows (Network timeout, Jev API errors, Response structure errors) remain `1`. No other changes.
-- **User's Answer**: Use `20` for validation errors and `1` for runtime failures
+- **User's Answer**: **Option B — Use `20` for validation errors and `1` for runtime failures**, aligned with UAC architecture best practices. This enables cleaner workflow branching and is consistent with how well-designed extensions behave on ps1.
 
 ---
 
@@ -106,7 +106,7 @@ Four questions are raised. All reflect genuine conflicts or gaps between the req
 - **Requirement Impact**: 
   - Section 3.3: `timeout_seconds` field type changes from "Text" to "Integer"; `confidence_threshold` field type changes from "Text" to "Float".
   - Section 4.2: Remove the "Invalid confidence threshold" and "Invalid timeout" rows from the error table — these are now enforced at template level.
-- **User's Answer**: Use Integer Field for `timeout_seconds` and Float Field for `confidence_threshold`
+- **User's Answer**: **Option B — Use Integer Field for `timeout_seconds` and Float Field for `confidence_threshold`**, with template-level min/max constraints. This removes validation code for these two fields and provides better UX.
 
 ---
 
@@ -162,7 +162,7 @@ Four questions are raised. All reflect genuine conflicts or gaps between the req
 - **Rationale**: The extension already writes all answer data to STDOUT and UAC global variables. Providing the same data in a structured Extension Output adds no behavioral complexity and creates an additional integration surface for automation and audit tools that consume the UAC REST API. The `error.type` field allows downstream code to differentiate error categories programmatically.
 - **Trade-offs**: O1 is the simplest implementation. O3 adds a small amount of code to build and emit the JSON payload but significantly increases the extension's utility in downstream automation contexts.
 - **Requirement Impact**: Section 4.1 (On Success) would add an "Extension Output" subsection describing the `result` structure. Section 4.2 (On Error) would add an "Extension Output" note describing the `error` structure.
-- **User's Answer**: Full structured Extension Output (O3) — answers dict keyed by question ID, low_confidence, prefix, answer_count on success; error type and message on failure
+- **User's Answer**: **Option O3 — Full structured Extension Output** as shown above. The answers dict (keyed by question ID) is especially valuable because it provides a single queryable JSON payload that downstream automation can parse without reading STDOUT or UAC global variables individually.
 
 ---
 
@@ -190,4 +190,4 @@ Four questions are raised. All reflect genuine conflicts or gaps between the req
 - **Rationale**: The "Answers Written" field confirms that the Jev API returned the expected number of answers and that variable writeback succeeded (or shows `"0 answers"` if the API returned an unexpected response). The "Low Confidence" field mirrors the `{PREFIX}_LOW_CONFIDENCE` global variable and lets operators identify low-confidence executions without querying variables.
 - **Trade-offs**: O1 keeps the template simpler. O3 adds two fields and minor output-populating code in the extension but significantly improves operational visibility in the UAC task list and detail views, especially in workflows where multiple Jev tasks run.
 - **Requirement Impact**: A new section "3.5 Output Only Fields" would be added to the Input Requirements section describing the two fields. Section 4.1 would be updated to note that these fields are set on success. Section 4.2 would note that on fatal error both fields are left empty.
-- **User's Answer**: Two output-only fields — "Answers Written" (Text) and "Low Confidence" (Text)
+- **User's Answer**: **Option O3 — Two output-only fields** (Answers Written + Low Confidence). Both are short, immediately readable, and directly represent the two most important operational outcomes of each execution.

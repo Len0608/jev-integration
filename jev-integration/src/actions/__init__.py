@@ -1,13 +1,13 @@
-"""Actions module - Business logic implementations."""
+"""Actions module — business logic implementations."""
 
 from actions.output import ActionOutput
+from actions.decide import decide
 from manager import ExtensionManager
+
 extension_manager = ExtensionManager()
 
-# Import your action functions here
-# from actions.action_name import action_function
-
-# Map action names to functions
+# Map action choice values to their implementing functions.
+# Keys must match the SingleChoice values defined in template.json.
 ACTION_MAPPER = {
-    # "action_name": action_function,
+    "Decide": decide,
 }

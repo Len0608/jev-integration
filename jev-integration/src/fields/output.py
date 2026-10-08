@@ -10,57 +10,48 @@ from fields.types import Text
 class OutputFields:
     """Real-time output fields for UAC UI updates.
 
-    Define fields for progress tracking during execution.
-    These fields sync with the UAC UI in real-time and are available
-    in subsequent re-runs via InputFields.previous_output.
+    Fields sync with the UAC UI in real-time during execution and are
+    available in subsequent re-runs via InputFields.previous_output.
 
-    All output fields should use the Text wrapper type.
+    Corresponds to the Output Only fields defined in template.json:
+    - answers_written  (Text Field 3) — count and prefix of written answers
+    - low_confidence   (Text Field 4) — mirrors the LOW_CONFIDENCE global variable
     """
 
-    # Define your progress tracking fields here using Text wrapper
-    # Example fields:
-    # status: Optional[Text] = None
-    # progress: Optional[Text] = None
-    # current_item: Optional[Text] = None
-    # items_processed: Optional[Text] = None
-    # last_processed_id: Optional[Text] = None
+    # Number of answers written and the variable prefix used
+    answers_written: Optional[Text] = None
+
+    # Whether any answer probability fell below the configured threshold
+    low_confidence: Optional[Text] = None
 
     def update(self, **fields):
         """Update fields and sync with UAC UI in real-time.
 
         Args:
-            **fields: Field names and values to update (strings will be wrapped in Text)
+            **fields: Field names and string values to update. String values
+                      are automatically wrapped in the Text type.
         """
         for field_name, field_value in fields.items():
             if hasattr(self, field_name):
-                # Wrap string values in Text type
                 if isinstance(field_value, str):
                     field_value = Text(field_value)
                 setattr(self, field_name, field_value)
         ui.update_output_fields(fields)
 
     def to_dict(self) -> dict:
-        """Get current fields as dictionary.
+        """Get current fields as a plain dictionary.
 
         Returns:
-            Dict with non-None field values (Text wrappers unwrapped to strings)
+            Dict containing only non-None fields with Text wrappers unwrapped
+            to their underlying string values.
         """
         result = {}
         for k, v in asdict(self).items():
             if v is not None:
-                # Extract value from Text wrapper
-                result[k] = v.value if isinstance(v, Text) else v
+                result[k] = v["value"] if isinstance(v, dict) and "value" in v else v
         return result
 
     def clear(self):
-        """Reset all fields to None.
-
-        Update this method to match your defined fields.
-        """
-        # Add your fields here
-        # self.status = None
-        # self.progress = None
-        # self.current_item = None
-        # self.items_processed = None
-        # self.last_processed_id = None
-        pass
+        """Reset all fields to None."""
+        self.answers_written = None
+        self.low_confidence = None

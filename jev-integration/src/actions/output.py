@@ -1,54 +1,70 @@
-"""ActionOutput dataclass for action return values."""
+"""ActionOutput dataclass for the TypeSafe-Jev extension."""
 
+import json
 from dataclasses import dataclass
-from typing import Optional, Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 
 @dataclass
 class ActionOutput:
-    """Output from action functions.
+    """Output returned by action functions.
 
-    Define fields based on your extension's output needs.
-    Control fields (stdout_options, output_options) are populated from InputFields.
+    Fields:
+        prefix:       Effective variable prefix used for UAC global variable names.
+        answers:      List of answer dicts from the Jev API, each with 'id', 'value',
+                      and 'probability' (float rounded to 4 d.p.).
+        low_confidence: Whether any answer probability fell below the threshold.
+        answer_count: Number of answers received from the API.
     """
 
-    # Define your output fields here
-    # Example fields:
-    # resource_id: Optional[str] = None
-    # resource_name: Optional[str] = None
-    # details: Optional[Dict[str, Any]] = None
-    # items: Optional[List[Dict[str, Any]]] = None
-    # metadata: Optional[Dict[str, Any]] = None
-
-    # Control fields (from template Choice fields)
-    stdout_options: List[str] = None
-    output_options: List[str] = None
+    prefix: Optional[str] = None
+    answers: Optional[List[Dict[str, Any]]] = None
+    low_confidence: Optional[bool] = None
+    answer_count: Optional[int] = None
 
     def __post_init__(self):
-        """Initialize control fields with defaults."""
-        if self.stdout_options is None:
-            self.stdout_options = []
-        if self.output_options is None:
-            self.output_options = []
+        """Initialise list fields with safe defaults."""
+        if self.answers is None:
+            self.answers = []
 
     def print_output(self):
-        """Print to STDOUT based on stdout_options.
+        """Print structured output to STDOUT.
 
-        Implement printing logic based on user selections.
-        Empty list = print everything (if no control fields in template)
+        The full STDOUT format is handled directly inside the decide action
+        (per-variable KEY=VALUE lines, audit block, completion marker).
+        This method is a no-op for this extension because the action emits
+        all required STDOUT content inline during execution.
         """
-        # Implement based on your fields
-        pass
 
     def to_dict(self) -> Dict[str, Any]:
-        """Convert to dict for Extension Output (unv_output).
+        """Convert to the Extension Output result dict.
 
-        Returns dict based on output_options selections.
-        Empty list = include everything (if no control fields in template)
+        Returns a dict with the 'result' structure expected by UAC:
+        {
+            "result": {
+                "prefix": "<PREFIX>",
+                "answer_count": <N>,
+                "low_confidence": <bool>,
+                "answers": {
+                    "<id>": {"value": "<val>", "probability": <float>},
+                    ...
+                }
+            }
+        }
         """
-        include_all = len(self.output_options) == 0
-        output = {}
+        answers_dict: Dict[str, Any] = {}
+        for answer in (self.answers or []):
+            q_id = answer.get("id", "")
+            answers_dict[q_id] = {
+                "value": answer.get("value", ""),
+                "probability": round(float(answer.get("probability", 0.0)), 4),
+            }
 
-        # Implement based on your fields
-
-        return output
+        return {
+            "result": {
+                "prefix": self.prefix,
+                "answer_count": self.answer_count,
+                "low_confidence": self.low_confidence,
+                "answers": answers_dict,
+            }
+        }

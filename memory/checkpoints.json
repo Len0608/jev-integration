@@ -4,6 +4,7 @@
     "analysis/requirements-composer",
     "analysis/requirements-refiner",
     "documentation",
+    "enhance-v1.0.1",
     "implementation",
     "init"
   ]

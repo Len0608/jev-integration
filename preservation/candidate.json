@@ -1,0 +1,924 @@
+{
+  "total_entries": 129,
+  "by_category": {
+    "outer": 1,
+    "app_source": 13,
+    "gen_metadata": 6,
+    "dep_content": 109
+  },
+  "flat_roots": [
+    "_yaml",
+    "bin",
+    "certifi",
+    "charset_normalizer",
+    "idna",
+    "requests",
+    "urllib3",
+    "yaml"
+  ],
+  "entries": [
+    {
+      "chain": "outer!template.json",
+      "sha256": "b2dde5f53f6df2d383febd5d30c50a50cdd1b3ac14ac35f22944b5aa18114883",
+      "size": 16849,
+      "category": "outer",
+      "executable": false
+    },
+    {
+      "chain": "inner!exceptions.py",
+      "sha256": "17b0f8cbf31ddc1613e082cc66211647e5768eb631734ff42a75b6d427b07e9e",
+      "size": 4524,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!extension.py",
+      "sha256": "0655d643fa512ba697983c2e51badcbc12dd36928d6d1ae5f2ed0c2f582cfc64",
+      "size": 17302,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!extension.yml",
+      "sha256": "411a9eb993e7ac6682a62e6fd2e3a1765e46c97213808633018020a0b95f7d66",
+      "size": 211,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!manager.py",
+      "sha256": "0d41fbaacc3245094acabe301f1c1a4028a804221da8f1c86fdd70635b5c5ce1",
+      "size": 3537,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!utility.py",
+      "sha256": "ab881dedb9c24aa4536bbff4ca4fcd28753445ad15ada7dbf52399f870cee618",
+      "size": 11879,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!EGG-INFO/PKG-INFO",
+      "sha256": "23ca0486b77c6e2dc179e9920eeef6c026b1c980a0ce1d990e465dd80c0c58f9",
+      "size": 236,
+      "category": "gen_metadata",
+      "executable": false
+    },
+    {
+      "chain": "inner!EGG-INFO/SOURCES.txt",
+      "sha256": "b25ab7e85a89b45d90fe1d5c83fdadf43975a275a60e5e6feee21015687b36d8",
+      "size": 3456,
+      "category": "gen_metadata",
+      "executable": false
+    },
+    {
+      "chain": "inner!EGG-INFO/dependency_links.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1,
+      "category": "gen_metadata",
+      "executable": false
+    },
+    {
+      "chain": "inner!EGG-INFO/native_libs.txt",
+      "sha256": "df2f040aa9a647f00aeac8dc9f9439a8eeeda0a9ccbad8542c59beaad4e3548c",
+      "size": 151,
+      "category": "gen_metadata",
+      "executable": false
+    },
+    {
+      "chain": "inner!EGG-INFO/top_level.txt",
+      "sha256": "36688feac0241b1d44f522bf99814e48a53fbeae72267e821dd82b8d3bae25da",
+      "size": 116,
+      "category": "gen_metadata",
+      "executable": false
+    },
+    {
+      "chain": "inner!EGG-INFO/zip-safe",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1,
+      "category": "gen_metadata",
+      "executable": false
+    },
+    {
+      "chain": "inner!_yaml/__init__.py",
+      "sha256": "d3801eff9a2cc5a8692476b75c165401fe308ba5d7df6811f03e97ea9eb81840",
+      "size": 1402,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!actions/__init__.py",
+      "sha256": "408a24282c9c162b1f0f5d40f96db9396e9b9be012efe06df899ddb5cc3c589a",
+      "size": 380,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!actions/decide.py",
+      "sha256": "64818a817bf0e2759fb8c317f47ba39839bf33e517372798f01f22d6a70a2d71",
+      "size": 9567,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!actions/output.py",
+      "sha256": "5b1badb51524ba6035beb7ed0429a1ce36a30483bf0c476c0f7a6b59d7076fa2",
+      "size": 2374,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!fields/__init__.py",
+      "sha256": "3fe49af6c0cc47c8b664643908df22839944013f192db7464dc7fda12deff3ff",
+      "size": 172,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!fields/input.py",
+      "sha256": "686514db5ce9270f82a74503c22c8f9649dba7afbee45f5524ddb9e596e29229",
+      "size": 12190,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!fields/output.py",
+      "sha256": "1db9d446b15a208ba1c18ad22e3c83f99f94ff45166d19b151f27e4d06313645",
+      "size": 2005,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!fields/types.py",
+      "sha256": "3f170feec7ba9d8137ebb69f4ab825bd29805c4728c8c6a16a7fbc44dd2e2398",
+      "size": 12770,
+      "category": "app_source",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/__init__.py",
+      "sha256": "b19dfcc333d6a75dfd73073901164507252f271b41d3b5f7d85510033a0547a7",
+      "size": 12311,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/composer.py",
+      "sha256": "fcaa37d16afa783594794a5ab94193dcb720f503c19ce3d59539c8311189f453",
+      "size": 4883,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/constructor.py",
+      "sha256": "90d8247da78b524c10618fd0e857f54f3d97570fe91b5c5513d024ef3faf88b0",
+      "size": 28639,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/cyaml.py",
+      "sha256": "e99ac01bd7c062f7557b614aff0d21997a06ed962ca185306a91bc0a20bbd87d",
+      "size": 3851,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/dumper.py",
+      "sha256": "3cb72d66563064ba7b5e679477046ebf89d8399d940670c8532f3e94a7cb17ea",
+      "size": 2837,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/emitter.py",
+      "sha256": "8e086d694ede170837d5b1b407b45979aff6f40762f422a65eafd08e04290a44",
+      "size": 43006,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/error.py",
+      "sha256": "021f73fada072546c4f63f8cf18a7181244ce4280b09cc15cc980b2d1176171a",
+      "size": 2533,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/events.py",
+      "sha256": "e74fd392c810884e2ea7e94aa3f57e9c1cbeb402319083d0c58e6a0e1282787c",
+      "size": 2445,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/loader.py",
+      "sha256": "5156becc8aa6905482218abf3e04869b835226db4763645fff3438fdbd5f1cdd",
+      "size": 2061,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/nodes.py",
+      "sha256": "80f28d8fca4a09d87677882bde021820d9cf39a3b11a12405226211919cf13ce",
+      "size": 1440,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/parser.py",
+      "sha256": "8a55a9e6fbe0a07146cef3990c8b45a068c3e83e369e1959ad9ca30306b4a09a",
+      "size": 25495,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/reader.py",
+      "sha256": "d1d9b38ab3a20c6e17a38d519ee412ecaf6b918df18c78956ac7c330d4ea08dc",
+      "size": 6794,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/representer.py",
+      "sha256": "22e58ff9c016f6c1ca1274b4802a926bcf78935060e1c813c5a0f021c6d143e6",
+      "size": 14190,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/resolver.py",
+      "sha256": "f4bf9561f9b89961f1503d558385fbae30d12bfed565de9bf76c33abb63620a6",
+      "size": 9004,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/scanner.py",
+      "sha256": "60433788b652690c17710460da5d91e0c753d3318fd85f5e1e42862a71f25906",
+      "size": 51279,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/serializer.py",
+      "sha256": "0a1b85826854d35863e31808f0668abfabdf33606e8f06bd8bb7761401e3edc0",
+      "size": 4165,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!yaml/tokens.py",
+      "sha256": "953408cd2570f0c83dc2fe39f7e4e388e41eeb05738aa69196a5f6ffcf6ba79e",
+      "size": 2573,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!bin/idna",
+      "sha256": "9f7470e4a7317fcc531b7a2e5a27f7d20f535551e8ffd1d7d3eb973829eeaa0d",
+      "size": 181,
+      "category": "dep_content",
+      "executable": true
+    },
+    {
+      "chain": "inner!bin/normalizer",
+      "sha256": "170144e8e732d37a8d4f940d99931cf06749d2dd50c6ceea2fd74c1c72654167",
+      "size": 207,
+      "category": "dep_content",
+      "executable": true
+    },
+    {
+      "chain": "inner!certifi/__init__.py",
+      "sha256": "7a52e5f4205f9b3d12a31898ceaa7e3f6837d19cc230700bcae1a9d91d1486c1",
+      "size": 94,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!certifi/__main__.py",
+      "sha256": "c410688fdd394d45812d118034e71fee88ba7beddd30fe1c1281bd3b232cd758",
+      "size": 243,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!certifi/cacert.pem",
+      "sha256": "9cc2a774b5198dcff14d9be1e66091f538975d867ce029a96bce15a55dfd730f",
+      "size": 240216,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!certifi/core.py",
+      "sha256": "5c55f2727746e697f7edac9e17c377d8752e0da7ecca191531b3b80403d61dad",
+      "size": 3394,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!certifi/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!certifi/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!certifi/tests/test_certify.py",
+      "sha256": "7c179d1edf37f7e912b133663735fb46c6338d5d0e5f8915d11c3bc287d227b8",
+      "size": 467,
+      "category": "dep_content",
+      "executable": true
+    },
+    {
+      "chain": "inner!charset_normalizer/__init__.py",
+      "sha256": "997c6fda6b13aee46c685bb1f96e6ee0d37c06702ac4cc38bfb30acce0f1f5b6",
+      "size": 1582,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/__main__.py",
+      "sha256": "cb3631311f8884a44763071295abc4bfca06770c6c47cf66af65f4f6a5c6769b",
+      "size": 109,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/api.py",
+      "sha256": "55455aa5898f169c803379b698a9fdf808d94002312b238968abb870fc427f81",
+      "size": 35774,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/cd.cpython-311-x86_64-linux-gnu.so",
+      "sha256": "a668d894ed31c2151b418c276fdb643ea8392a64808e12bb6f6403e00c06ec8b",
+      "size": 185776,
+      "category": "dep_content",
+      "executable": true
+    },
+    {
+      "chain": "inner!charset_normalizer/cd.py",
+      "sha256": "e9d24e66f774aeb1045af931e78900132f6a00ffee22e8963008b9c17f0e66c6",
+      "size": 15980,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/constant.py",
+      "sha256": "b49d4ea5dbc4598665bc66f651caf81564cc1cca4f21a0e45d9491bd5833771b",
+      "size": 60812,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/legacy.py",
+      "sha256": "6e091d12fb9b4c238f94c28ecee10d5c73226ab877e956866d1bd64a522bd4a0",
+      "size": 2651,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/md.cpython-311-x86_64-linux-gnu.so",
+      "sha256": "c8beee3f6bbd27f7952c2875bd177d1c2e392178e8ee0d7feecdbd904b315ab3",
+      "size": 354984,
+      "category": "dep_content",
+      "executable": true
+    },
+    {
+      "chain": "inner!charset_normalizer/md.py",
+      "sha256": "cf596c0498a61f91f8d6fef54e296cba3204b178001deda9371f8a8084c378e3",
+      "size": 35274,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/models.py",
+      "sha256": "f8350cead0964f25fc4d477ee0355a6005ce07f7311c686b45a4b66bf38e406b",
+      "size": 13530,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/utils.py",
+      "sha256": "119ec0e7fb286ef4c8c58585b1f5ee56c9f6261c31c33addd3cb20105d05ae71",
+      "size": 14122,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/version.py",
+      "sha256": "793b9181127b1e37a817ec597c6e6d970bd1130cac7654af99ba2cbda4a9cf57",
+      "size": 115,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/cli/__init__.py",
+      "sha256": "0fc23cea5164dbea72e3926fab19e24e2ad28ffb05c84eac8da63fd3e1b5b217",
+      "size": 136,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!charset_normalizer/cli/__main__.py",
+      "sha256": "34f2b7c980245d713b52fb3a22a8a39206734ba1ba7e0b9116e297ce0a5ff147",
+      "size": 11949,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/__init__.py",
+      "sha256": "8514c3ed53136a3596ebdf512fa487bbdd7da5a99adcaed82e0363d2c306d3af",
+      "size": 944,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/__main__.py",
+      "sha256": "e0930aeba5a3e2e2d94ca6c5fac4f72c0c4eb2be9bba283becf98e909091471c",
+      "size": 83,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/cli.py",
+      "sha256": "2e01972a25e67afdfba5d824013c01e808893916539c0db33f72f37c42b8896a",
+      "size": 4245,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/codec.py",
+      "sha256": "7dff4247d75e6e265cbea1261f10d122ba9299a371429cfa018e091ec0b7602d",
+      "size": 8002,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/compat.py",
+      "sha256": "4ff7995ce52dd1be5381ae7a70fc9b42ef420982b41532b599d88f6fdea76bc0",
+      "size": 1376,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/core.py",
+      "sha256": "3dd4c3ffee4ff223207fac65f3812a1e6895ae8ad1e7a6ed60115768f3551520",
+      "size": 32580,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/idnadata.py",
+      "sha256": "23a9a8c1d15de9c634d0bf213d779810f485083fe1b0f7e09044ad04a69cc7eb",
+      "size": 45763,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/intranges.py",
+      "sha256": "838f6c70b4a4a89b4084b98e3836bb8551eb8928e66fad2d893b04a287097412",
+      "size": 1851,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/package_data.py",
+      "sha256": "ae759534a3c582a00ac856cfca464a39ee8251d393208d8af06b605bc20e02a9",
+      "size": 21,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!idna/uts46data.py",
+      "sha256": "770e849bfa156c71828a89440a57fe9aea70735f103ae4616ee4f682e13d6c00",
+      "size": 237174,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/__init__.py",
+      "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+      "size": 5072,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/__version__.py",
+      "sha256": "40a0dc78af0afee8eac030dcde862b474a1d381620295390439bc56a9fc6fdc8",
+      "size": 435,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/_internal_utils.py",
+      "sha256": "9cc4329abe21b37d93a95a3901b0ab99c24486f3d487bc57965bb2ab0b252e24",
+      "size": 1495,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/adapters.py",
+      "sha256": "f275f5d7781b6f5db7694b71d844e400dffa22c617f8cd9f4682c696e4c47119",
+      "size": 26285,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/api.py",
+      "sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+      "size": 6449,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/auth.py",
+      "sha256": "905ef9b6a9cb72d67d31ffe19bd4d9223e1c4169cde6ec51cfca16b31e70991d",
+      "size": 10186,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/certs.py",
+      "sha256": "67d49be35d009efea35054f2b2cd23145854eb1b2df1cb442ea7f2f04bf6de0c",
+      "size": 429,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/compat.py",
+      "sha256": "27bb088d1e97a031a9e494d5ccec642b97d2a145546bf3e373b8916610161a62",
+      "size": 2142,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/cookies.py",
+      "sha256": "6cd8be8aa123e0d3d9d34fa86feac7bf392f39bccdde5129830de0ea9692dd7c",
+      "size": 18590,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/exceptions.py",
+      "sha256": "8c93d2d545804ecf3a4a155468ba2b4e225bd52686ba83445a020225ea7e5646",
+      "size": 4260,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/help.py",
+      "sha256": "80f5f977f1fb5ddf3c6830017a386a1a097d075545453b79066898bcbdcfcc84",
+      "size": 3875,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/hooks.py",
+      "sha256": "0a2bb2b221c0dfd57951f702057148c7cdc8ac3a6ec1f37d45c4d482fdbc7ed4",
+      "size": 733,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/models.py",
+      "sha256": "32365d67893bb67c3ed67cf93ca4a18e63e6ab29342fa0dc8b09c59e06ff564e",
+      "size": 35510,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/packages.py",
+      "sha256": "fe0d2067af355320252874631fa91a9db6a8c71d9e01beaacdc5e2383c932287",
+      "size": 904,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/sessions.py",
+      "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f",
+      "size": 30503,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/status_codes.py",
+      "sha256": "889500780db96da4ddc3ee8f7c3d1e178aa1a48343251248fb268cab1b382c42",
+      "size": 4322,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/structures.py",
+      "sha256": "f886e6855cf4e92fb968f499b94b6167afba0fd5ce8d1b935c739a6d8d38d573",
+      "size": 2912,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!requests/utils.py",
+      "sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+      "size": 33213,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/__init__.py",
+      "sha256": "24ca35b60d67215d40789daf10d0bf4f17e5d1ee61e86ce5f43195935ad645ba",
+      "size": 6979,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/_base_connection.py",
+      "sha256": "1f37121077b1803ad152beb48cd9e20762908ddc3ded279d0f996e45f1ed0978",
+      "size": 5580,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/_collections.py",
+      "sha256": "1fac8ba8659d64d919d0b9bf7e72c4caaba59ce716eaab570a1daacf183bdf15",
+      "size": 17669,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/_request_methods.py",
+      "sha256": "802785f3948efd45385a83f0607228cffb70f9e33f1153a42c5a7c385b02ec30",
+      "size": 9931,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/_version.py",
+      "sha256": "7b84320186a7a1805134fd8aeaa0d508e80116851aecbd23f7561042c5073bd4",
+      "size": 520,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/connection.py",
+      "sha256": "8a59dab3d7b6a0e1b38a5fd6e565ef6a49381bb995729d015e4f6440ab8523e0",
+      "size": 47903,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/connectionpool.py",
+      "sha256": "6a147869216b94449a053e869d4311cba23294551c83ee20fe5d2f1eaff50a3e",
+      "size": 45250,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/exceptions.py",
+      "sha256": "8503c7a2aa38cb0e3a7ac3525647225505d5520031580825b21e8c6f242d6be4",
+      "size": 9945,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/fields.py",
+      "sha256": "6862c5015669554f856c996596f7b8021834fa91fd659050d88cfb95fa648e43",
+      "size": 10801,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/filepost.py",
+      "sha256": "53c78d67e9a928a1e1ae56c7104893c7180ad7a21e8e111aeeecf8db2a80fdd2",
+      "size": 2388,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/poolmanager.py",
+      "sha256": "46654506338ff9a0e79baeef8a409af7d37aad001633150384a1eb4a5d1ff4cb",
+      "size": 25026,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/py.typed",
+      "sha256": "51a0ae3c56b71fc5006a46edfb91bc48f69c95d4ce1af26fd7ca4f8d42798036",
+      "size": 93,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/response.py",
+      "sha256": "0e4559c737914d4f8f941dca9ecfaf6caec6792258302bffec7b8b41dae3c71a",
+      "size": 54628,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/contrib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/contrib/pyopenssl.py",
+      "sha256": "5acf2f0ae6527e023a4031da552246600f6e753581f4a2f4c19ff4d7c88a8230",
+      "size": 21494,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/contrib/socks.py",
+      "sha256": "81141f708d6928e021e62238fd30c090a6803f737f1f620de49e660652990691",
+      "size": 7566,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/contrib/emscripten/__init__.py",
+      "sha256": "c325ef7bcae6a97eecd8aa91401c43e56978f23cd63e7e7ed6efd7a100442d57",
+      "size": 836,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/contrib/emscripten/connection.py",
+      "sha256": "822125b01a14b0a55445b6736fc182ac99aa5b6dd79ef8f668dc90545e36b258",
+      "size": 8960,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/contrib/emscripten/emscripten_fetch_worker.js",
+      "sha256": "cf5937cd9e3f84329ddfeb4def0cf3f0b1e31c2da9c4dfeebbc07793d0fd0377",
+      "size": 3677,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/contrib/emscripten/fetch.py",
+      "sha256": "e7171dfbebe217165dda7072d1a2bbdddb49f53b21d7261953f4945f09f089b9",
+      "size": 23520,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/contrib/emscripten/request.py",
+      "sha256": "98bdbcb33cb52af137349856a2be633666aba7c830a650d4fbb8301996398344",
+      "size": 566,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/contrib/emscripten/response.py",
+      "sha256": "083a58d0616896e47723110290cda01f9b837d80ccd042f5156afb07beb0b603",
+      "size": 9719,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/http2/__init__.py",
+      "sha256": "c73ac0487ed1e4035190f24ea2de651a70133aadca2aec97cc8e36adc9f09aab",
+      "size": 1741,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/http2/connection.py",
+      "sha256": "9e3960af8c0b862009bed52ac44127e12f79be27db95346b9ab6911e809cbfad",
+      "size": 12613,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/http2/probe.py",
+      "sha256": "9e7024a9b8406a43a217be6bcfb5b4b9d677f047a1fee0fc7e357be0def71442",
+      "size": 3014,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/__init__.py",
+      "sha256": "faa792d1071e8af6b3bc110a0cd142008fba00271d0ce1384ccbe8ed22cd9404",
+      "size": 1001,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/connection.py",
+      "sha256": "2633bbdb69731e5ccb5cf4e4afd65605d86c7979cc5633126f50c92d5ad74a74",
+      "size": 4444,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/proxy.py",
+      "sha256": "b1e3fcf90e41e9b07474cb703e3f98719650df4bc7b8ba91bbeb48d096767f3b",
+      "size": 1148,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/request.py",
+      "sha256": "d9af3b7ae5309e3ca50777f27994b3fd5b3aeb32c6aaa44a252ddba5366c89b0",
+      "size": 10228,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/response.py",
+      "sha256": "bd013adfdba81218f5be98c4771bb994d22124249466477ba6a965508d0164e0",
+      "size": 3374,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/retry.py",
+      "sha256": "0fdc26b67d1ecc42b0cab3972f20bb07284d783f4dc318394fe8b99098c42925",
+      "size": 20151,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/ssl_.py",
+      "sha256": "72c779c13f6e2afa22149d75f98a5fab0cdc886193515d9dae62e12354fd61c4",
+      "size": 17856,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/ssl_match_hostname.py",
+      "sha256": "16de38289cd3cc632629f7ff6573fdd658b65785a19af132d7a3ca05cbf8bd99",
+      "size": 5479,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/ssltransport.py",
+      "sha256": "133e0ef2947fbd3f1d6a7fc5bea0584ba7600df05710c7d57ebcdc754a167e2e",
+      "size": 8847,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/timeout.py",
+      "sha256": "e1e4f5155799654ee1ee6603d49ab639735ee1fc5e91d36f868594919bac4690",
+      "size": 10346,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/url.py",
+      "sha256": "6a2814d91987dd9728278d413a154ee5277b15cb262d9945425377f2a693311f",
+      "size": 19579,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/util.py",
+      "sha256": "8f795b64ad633f28b00f7e13f08809cdd5846554fee04fb4bd82098bd52378d0",
+      "size": 1146,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!urllib3/util/wait.py",
+      "sha256": "fe987c22b511deca8faa2d0ea29420254947e30ce419e3390a2c80ed7186b662",
+      "size": 4423,
+      "category": "dep_content",
+      "executable": false
+    },
+    {
+      "chain": "inner!templates/template.json",
+      "sha256": "b2dde5f53f6df2d383febd5d30c50a50cdd1b3ac14ac35f22944b5aa18114883",
+      "size": 16849,
+      "category": "app_source",
+      "executable": false
+    }
+  ]
+}
